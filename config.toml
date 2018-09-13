@@ -1,3 +1,8 @@
 baseURL = "https://www.bestbitesmemphis.com/"
-languageCode = "en-us"
 title = "Best Bites of Memphis"
+languageCode = "en-us"
+
+[params]
+  author = "Josh W Lewis"
+  description = "The best tastes of Memphis, all under one roof, supporting Saint Francis of Assisi Catholic Shool"
+  keywords = "Saint Francis, best bites, memphis"
