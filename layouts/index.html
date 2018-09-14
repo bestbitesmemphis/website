@@ -67,7 +67,6 @@
 
       <section class="page-section" id="about">
         <div class="container relative">
-
           <div class="section-text">
             <div class="row">
 
@@ -79,7 +78,7 @@
                   A silent auction with the great items from local businesses.
                 </h4>
                 <h4>
-                  A $15,000 Grand Prize Raffle.
+                  A $15,000 Grand Prize raffle.
                 </h4>
                 <h4>
                   Awesome live, local music.
@@ -89,77 +88,30 @@
                   All benefitting Saint Francis of Assissi Catholic School.
                 </h3>
               </div>
-
               <div class="col-md-4 align-center">
                 <img src="images/sfa-logo.png" alt="SFA logo" />
               </div>
-
             </div>
           </div>
-
         </div>
       </section>
 
 
-      <!-- Gallery Section -->
       <section class="page-section pt-0 pb-0">
         <div class="relative">
-
           <div class="image-carousel bg-dark">
-
-            <!-- Image Item -->
-            <div>
-              <div class="post-prev-img mb-0">
-                <a href="images/restaurant/gallery/1.jpg" class="lightbox-gallery-2 mfp-image"><img src="images/restaurant/gallery/1.jpg" alt="" /></a>
-              </div>
-            </div>
-            <!-- End Image Item -->
-
-            <!-- Image Item -->
-            <div>
-              <div class="post-prev-img mb-0">
-                <a href="images/restaurant/gallery/2.jpg" class="lightbox-gallery-2 mfp-image"><img src="images/restaurant/gallery/2.jpg" alt="" /></a>
-              </div>
-            </div>
-            <!-- End Image Item -->
-
-            <!-- Image Item -->
-            <div>
-              <div class="post-prev-img mb-0">
-                <a href="images/restaurant/gallery/4.jpg" class="lightbox-gallery-2 mfp-image"><img src="images/restaurant/gallery/4.jpg" alt="" /></a>
-              </div>
-            </div>
-            <!-- End Image Item -->
-
-            <!-- Image Item -->
-            <div>
-              <div class="post-prev-img mb-0">
-                <a href="images/restaurant/gallery/6.jpg" class="lightbox-gallery-2 mfp-image"><img src="images/restaurant/gallery/6.jpg" alt="" /></a>
-              </div>
-            </div>
-            <!-- End Image Item -->
-
-            <!-- Image Item -->
-            <div>
-              <div class="post-prev-img mb-0">
-                <a href="images/restaurant/gallery/10.jpg" class="lightbox-gallery-2 mfp-image"><img src="images/restaurant/gallery/10.jpg" alt="" /></a>
-              </div>
-            </div>
-            <!-- End Image Item -->
-
-            <!-- Image Item -->
-            <div>
-              <div class="post-prev-img mb-0">
-                <a href="images/restaurant/gallery/3.jpg" class="lightbox-gallery-2 mfp-image"><img src="images/restaurant/gallery/3.jpg" alt="" /></a>
-              </div>
-            </div>
-            <!-- End Image Item -->
-
+            {{ range seq 6 }}
+                <div class="post-prev-img mb-0">
+                  <a href="images/gallery-{{ . }}.jpg"
+                    class="lightbox-gallery-2 mfp-image">
+                    <img src="images/gallery-{{ . }}.jpg" alt="" />
+                  </a>
+                </div>
+            {{ end }}
           </div>
 
         </div>
       </section>
-      <!-- End Gallery Section -->
 
 
       <!-- Menu Section -->
