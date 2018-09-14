@@ -1,1 +1,5 @@
-.lightbox-gallery-2 img { width: auto; height:220px; }
+.lightbox-gallery-2 img { 
+  width: 100%; 
+  height: 270px;
+  object-fit: cover;
+}
