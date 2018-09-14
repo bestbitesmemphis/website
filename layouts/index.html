@@ -542,12 +542,45 @@
 
 
       <!-- Reservation Section -->
-      <section class="page-section" id="reservations">
+      <section class="page-section" id="tickets">
         <div class="container relative">
 
           <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Reservations
+            Tickets
           </h2>
+
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input name="cmd" type="hidden" value="_s-xclick"> <input name="hosted_button_id" type="hidden" value="3HCQ9BKDR23AG">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><input name="on0" type="hidden" value="Best Bites">Best Bites</td>
+                    </tr>
+                    <tr>
+                      <td><select name="os0">
+                          <option value="Event Tickets">Event Tickets $35.00 USD</option>
+                          <option value="RAFFLE TICKETS- EACH">RAFFLE TICKETS- EACH $20.00 USD</option>
+                          <option value="RAFFLE TICKETS 5 for 90">RAFFLE TICKETS 5 for 90 $90.00 USD</option>
+                      </select></td>
+                    </tr>
+                    <tr>
+                      <td><input name="on1" type="hidden" value="PHONE NUMBER">PHONE NUMBER</td>
+                    </tr>
+                    <tr>
+                      <td><input maxlength="200" name="os1" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td><input name="on2" type="hidden" value="STUDENT NAME/GRADE(if Applies)">STUDENT NAME/GRADE(if Applies)</td>
+                    </tr>
+                    <tr>
+                      <td><input maxlength="200" name="os2" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <input name="currency_code" type="hidden" value="USD"> <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" type="image"> <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></form>
+            </div>
+          </div>
 
 
           <div class="row">
