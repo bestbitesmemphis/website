@@ -3,3 +3,7 @@
   height: 270px;
   object-fit: cover;
 }
+
+.about-logo {
+  max-height: 200px;
+}
