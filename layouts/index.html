@@ -272,20 +272,16 @@
         <div class="container relative">
 
           <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Purchase Tickets
+            Purchase Tickets (Closed)
           </h2>
 
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <div class="section-text align-center mb-70 mb-xs-40">
                 <p>
-                  Event tickets may be purchased at a $5 discount in advance 
-                  here (through PayPal) or at the door for $40 until we sell out.
-                </p>
-                <p>
-                  Raffle tickets may be purchased here (through PayPal), at the
-                  door, or directly from your favorite student. You do not 
-                  need to be present to win.
+                  Sorry, but online ticket sales are <b>closed</b>! 
+                  Event tickets will be available at the door for $40 until 
+                  we sell out. Raffle tickets will also be available at the door.
                 </p>
               </div>
             </div>
@@ -299,7 +295,7 @@
                 <input name="currency_code" type="hidden" value="USD">
                 <div class="form-group">
                   <input type="hidden" name="on0" value="Best Bites">
-                  <select name="os0" class="form-control">
+                  <select name="os0" class="form-control" disabled=true>
                     <option value="Event Tickets">
                       Event Ticket - $35.00
                     </option>
@@ -314,18 +310,23 @@
 
                 <div class="form-group">
                   <input name="on1" type="hidden" value="Phone Number">
-                  <input type="text" name="os1" id="phone" class="input-md round
-                  form-control" placeholder="Phone Number (required)" pattern=".{3,100}" required>
+                  <input type="text" name="os1" id="phone" 
+                    class="input-md round form-control" 
+                    placeholder="Phone Number (required)"
+                    pattern=".{3,100}" required disabled=true>
                 </div>
 
                 <div class="form-group">
                   <input name="on2" type="hidden" value="Student Name / Grade">
-                  <input type="text" name="os2" id="phone" class="input-md round form-control" placeholder="Student Name / Grade (optional)" pattern=".{3,100}">
+                  <input type="text" name="os2" id="phone" 
+                    class="input-md round form-control" 
+                    placeholder="Student Name / Grade (optional)"
+                    pattern=".{3,100}" disabled=true>
                 </div>
 
                 <button alt="Add to PayPal Cart"
                   class="submit_btn btn btn-mod btn-medium btn-round"
-                  name="submit"
+                  name="submit" disabled=true
                   src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
                   type="submit">
                   Add to PayPal Cart
